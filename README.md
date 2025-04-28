@@ -27,10 +27,9 @@ Index optimization	Monthly	Rebuild/reorganize indexes
 Slow query analysis	Weekly	Query profiling, execution plans
 System and software patching	Quarterly	OS updates, DBMS updates
 Disaster recovery drills	Quarterly	Backup restore testing
+
 🗂️ Folder Structure
-bash
-Copy
-Edit
+
 maintenance/
 │
 ├── maintenance-checklist.md    # Full maintenance task checklist
@@ -39,6 +38,7 @@ maintenance/
 ├── security-management/        # Permission audit scripts, role management
 ├── monitoring-scripts/         # Scripts for monitoring database health
 └── README.md                   # (this file)
+
 🚀 Goals
 Build reliable and secure databases
 
