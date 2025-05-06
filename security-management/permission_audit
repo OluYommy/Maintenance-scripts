@@ -1,0 +1,6 @@
+-- List all users and their privileges
+SELECT 
+    user, host, Select_priv, Insert_priv, Update_priv, Delete_priv, 
+    Create_priv, Drop_priv, Grant_priv 
+FROM mysql.user 
+ORDER BY user, host;
