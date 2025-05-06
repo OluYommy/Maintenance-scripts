@@ -1,0 +1,9 @@
+# Quarterly Maintenance Notes
+
+## MySQL Patch
+- Version upgraded to 8.x.x on YYYY-MM-DD
+- Verified with: `SELECT VERSION();`
+
+## OS Patch
+- Ubuntu packages updated via `apt-get upgrade`
+- Restart and service check performed
