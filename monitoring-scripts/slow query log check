@@ -1,0 +1,6 @@
+-- Enable slow query log if not already
+SET GLOBAL slow_query_log = 'ON';
+SET GLOBAL long_query_time = 1;
+
+-- Check slow queries
+SELECT * FROM mysql.slow_log ORDER BY start_time DESC LIMIT 10;
