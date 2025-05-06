@@ -1,0 +1,7 @@
+-- Check for orphaned records (example: orders without users)
+SELECT o.id FROM orders o
+LEFT JOIN users u ON o.user_id = u.id
+WHERE u.id IS NULL;
+
+-- Clean up (use with caution!)
+-- DELETE FROM orders WHERE user_id NOT IN (SELECT id FROM users);
