@@ -1,0 +1,4 @@
+-- Simple restore test: check structure of critical tables after restore
+USE restored_db;
+SHOW TABLES;
+DESCRIBE critical_table;
