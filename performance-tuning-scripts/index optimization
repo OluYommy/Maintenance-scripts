@@ -1,0 +1,8 @@
+-- Identify fragmented indexes and optimize them (for InnoDB)
+SELECT 
+    table_schema, table_name, index_name, stat_value AS 'Fragmentation Score'
+FROM mysql.innodb_index_stats
+WHERE stat_description = 'leaf_pages';
+
+-- Rebuild index by optimizing table
+OPTIMIZE TABLE your_database.your_table;
